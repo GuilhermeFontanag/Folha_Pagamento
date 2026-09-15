@@ -33,10 +33,9 @@ public  float calcularRemuneracaoTotal(){
         return cpf;
     }
 
-
-
-
-
+    public float getSaldo() {
+        return saldo;
+    }
 }
 
 
