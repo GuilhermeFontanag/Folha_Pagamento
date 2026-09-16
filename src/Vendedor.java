@@ -1,5 +1,5 @@
 public class Vendedor extends Funcionario {
-    public Vendedor(String nome, String cpf, float saldo) {
+    public Vendedor(String nome, String cpf, double saldo) {
         super(nome, cpf, saldo);
     }
 
@@ -14,9 +14,13 @@ public class Vendedor extends Funcionario {
 
     @Override
     public float calcularBonificacao() {
-        return (getHolerite()*5/100)+vendas * getHolerite();
+        return (getSaldo()*5/100)+vendas * getSaldo();
     }
 
+    @Override
+    public String getDados() {
+        return super.getDados() + "total de vendas:" +  vendas * 0.05;
+    }
 
 
 }

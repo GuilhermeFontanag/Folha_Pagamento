@@ -1,7 +1,7 @@
 public class Desenvolvedor extends Funcionario {
 
 
-    public Desenvolvedor(String nome, String cpf, float saldo) {
+    public Desenvolvedor(String nome, String cpf, double saldo) {
         super(nome, cpf, saldo);
     }
 

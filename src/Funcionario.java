@@ -19,6 +19,9 @@ public abstract class Funcionario {
         this.saldo = saldo;
     }
 
+    public Funcionario(String nome, String cpf, double saldo) {
+    }
+
     public abstract float calcularBonificacao();
 
     public float calcularRemuneracaoTotal() {
